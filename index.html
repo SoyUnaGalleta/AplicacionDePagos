@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación de Pagos</title>
+    <link rel="stylesheet" href="assets/Bootstrap 3.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body onload="crearFunciones()">
+
+    <div class="container">
+
+        <div class="row">
+        <h1 class="d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" id="card" fill="#df514a"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M512 80c8.8 0 16 7.2 16 16v32H48V96c0-8.8 7.2-16 16-16H512zm16 144V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224H528zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm56 304c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm128 0c-13.3 0-24 10.7-24 24s10.7 24 24 24H360c13.3 0 24-10.7 24-24s-10.7-24-24-24H248z"/></svg>Easy Pago</h1></div>
+
+        <div class="row d-flex justify-content-center">
+
+            <div class="col-lg-3 col-md-5 col-10 p-3 m-4 color1">
+                <p class="preguntas">¿Cuánto tienes que pagar?</p>
+                <input class="form-control" type="text" placeholder="90000" id="pago">
+            </div>
+
+            <div class="col-lg-3 col-md-5 col-10 p-3 m-4 color2">
+                <p class="preguntas">¿Cuánto interés(%) debes pagar?</p>
+                <input class="form-control" type="text" placeholder="15" id="interes">
+            </div>
+
+            <div class="col-lg-3 col-md-5 col-10 p-3 m-4 color3">
+                <p class="preguntas">¿En cuántas cuotas puedes pagarlo?</p>
+                <input class="form-control" type="text" placeholder="6" id="nCuota">
+            </div>
+        </div>
+
+        <div class="row m-4">
+            <div class="col-12 d-flex justify-content-center">
+                <button type="button" class="btn" data-bs-toggle="modal">¿Cómo lo pago?</button>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-10">
+                <p class="resultado"></p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/Bootstrap 3.5.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
